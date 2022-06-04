@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
+  color:rgb(195,62,130);
+}
+nav {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.navlist {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 50px;
+  
+}
+.text {
+  color: rgb(195,62,130);
+}
+.heading {
+  margin: 20px 0 20px 20px;
+  font-weight: 800;
+  color:rgb(195,62,130);
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  /* nav {
+    display: none;
+  } */
+  .heading {
+    margin: 20px auto;
+  }
+  header{
+    flex-direction: column;
+  }
+  .navlist{
+    gap:20px;
+  }
+}
+@media (min-width: 800px) {
+  .navlist{
+    font-size: 25px;
+  }
+  .menu,
+  .close {
+    display: none;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+.speedDial {
+  position: fixed;
+  right: 4vmax;
+  top: 0.8vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
